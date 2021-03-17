@@ -1,4 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 * {
+    font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -44,7 +46,18 @@
     z-index: 99;
 }
 
+.progress_steps_box_line::after {
+    display: block;
+    content: '';
+    width: 50%;
+    height: 3px;
+    background-color: cornflowerblue;
+}
+
 .progress_steps_box_list_item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     cursor: pointer;
     border-radius: 50%;
     width: 30px;
@@ -63,6 +76,30 @@
 .active {
     background-color: cornflowerblue;
 }
+
+
+/* .prev_btn,
+.next_btn {
+    cursor: pointer;
+    width: 100px;
+    height: 30px;
+    border-radius: 3px;
+    border: none;
+    outline: none;
+    color: #ffffff;
+    font-size: 14px;
+    background-color: cornflowerblue;
+}
+
+.prev_btn:hover,
+.next_btn:hover {
+    background-color: rgb(79, 113, 177);
+}
+
+.prev_btn:active,
+.next_btn:active {
+    background-color: rgb(119, 161, 238);
+} */
 
 .prev_btn {
     margin-right: 5px;
