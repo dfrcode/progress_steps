@@ -1,0 +1,73 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.app {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+}
+
+.progress_steps_box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    max-width: 400px;
+    height: 60px;
+}
+
+.progress_steps_box_line {
+    position: relative;
+    top: 30px;
+    width: calc(100% - 60px);
+    background-color: #dddddd;
+    height: 3px;
+    margin: 0 auto;
+    z-index: 1;
+}
+
+.progress_steps_box_list {
+    padding: 0 30px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    z-index: 99;
+}
+
+.progress_steps_box_list_item {
+    cursor: pointer;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    background-color: #dddddd;
+}
+
+.progress_steps_box_btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.active {
+    background-color: cornflowerblue;
+}
+
+.prev_btn {
+    margin-right: 5px;
+}
+
+.next_btn {
+    margin-left: 5px;
+}
