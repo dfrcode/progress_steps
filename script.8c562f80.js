@@ -3,4 +3,4 @@ parcelRequire=function(e,r,t,n){var i,o="function"==typeof parcelRequire&&parcel
 },{}],"MO7r":[function(require,module,exports) {
 "use strict";require("../css/style.scss");var e=document.getElementById("progress"),t=document.getElementById("prev"),c=document.getElementById("next"),n=document.querySelectorAll(".container_progress_circle"),l=1;function s(){n.forEach(function(e,t){t<l?e.classList.add("active"):e.classList.remove("active")});var t=document.querySelectorAll(".active");e.style.width="".concat((t.length-1)/(n.length-1)*100,"%"),console.log(e.style.width)}c.addEventListener("click",function(){++l>n.length-1&&(l=n.length,c.disabled=!0),t.disabled=!1,s()}),t.addEventListener("click",function(){--l<2&&(l=1,t.disabled=!0),c.disabled=!1,s()});
 },{"../css/style.scss":"wgu1"}]},{},["MO7r"], null)
-//# sourceMappingURL=script.8c562f80.js.map
+//# sourceMappingURL=https://dfrcode.github.io/progress_steps/script.8c562f80.js.map
