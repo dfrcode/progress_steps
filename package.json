@@ -1,0 +1,31 @@
+{
+  "name": "progress_steps",
+  "version": "1.0.0",
+  "description": "Ссылка на мини-проект: https://dfrcode.github.io/progress_steps/.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "parcel index.html --open",
+    "build": "parcel build index.html --out-dir=build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dfrcode/progress_steps.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dfrcode/progress_steps/issues"
+  },
+  "homepage": "https://dfrcode.github.io/progress_steps",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.5",
+    "sass": "^1.32.8"
+  },
+  "dependencies": {
+    "gh-pages": "^3.1.0"
+  }
+}
