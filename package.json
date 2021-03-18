@@ -4,7 +4,7 @@
   "description": "https://dfrcode.github.io/progress_steps/.",
   "main": "index.js",
   "scripts": {
-    "start": "cross-env NODE_ENV=development parcel index.html ",
+    "start": "cross-env NODE_ENV=development parcel index.html --open",
     "build": "cross-env NODE_ENV=production parcel build index.html --public-url https://dfrcode.github.io/progress_steps/",
     "predeploy": "yarn build",
     "deploy": "gh-pages -d dist"
